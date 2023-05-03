@@ -2,7 +2,7 @@ import type { ElementType, ReactNode } from "react";
 import { lazy, Suspense } from "react";
 import { createBrowserRouter } from "react-router-dom";
 
-import { PageLoader } from "./components/PageLoader/PageLoader";
+import { PageLoader } from "./components/PageLoader";
 import { paths } from "./paths";
 import type { Routes } from "./types";
 
