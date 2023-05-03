@@ -1,0 +1,22 @@
+////////////////////////////////////////////////////////////////////////
+// COLORS:
+
+// GRAYS
+$color-main: #999;
+$color-background-1: #1f1e23;
+$color-background-2: #353539;
+$color-background-3: #1c1b20;
+$color-background-4: #1f1e23;
+
+// BROWNS
+$color-pancake: #d6c9b6;
+
+////////////////////////////////////////////////////////////////////////
+// PANCAKE ANIMATION VARIABLES:
+
+$anim-time: 2; // main pan/pancake animation (in seconds)
+$flatten-deg: 85; // how round will the pancake be at the top/peak (in deg)
+$angle: 27; // max pan's angle while flipping (in deg)
+$peak: 40%; // pancake's highest level, obviously ;)
+
+////////////////////////////////////////////////////////////////////////
