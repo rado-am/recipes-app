@@ -1,4 +1,7 @@
-@import "./PageLoaderVariables";
+$anim-time: 2; // main pan/pancake animation (in seconds)
+$flatten-deg: 85; // how round will the pancake be at the top/peak (in deg)
+$angle: 27; // max pan's angle while flipping (in deg)
+$peak: 40%; // pancake's highest level, obviously ;)
 
 @keyframes jump {
   0% {
