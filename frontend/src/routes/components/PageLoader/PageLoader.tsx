@@ -4,7 +4,6 @@ import styles from "./PageLoader.module.scss";
 
 export const PageLoader: FC = () => (
   <div className={styles["page__loader"]}>
-    <h1 className={styles["page__loader--h1"]}>Cooking in progress...</h1>
     <div className={styles.cooking}>
       <div className={styles["cooking__bubble"]} />
       <div className={styles["cooking__bubble"]} />

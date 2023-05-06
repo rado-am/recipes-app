@@ -3,7 +3,7 @@
 
 .page__loader {
   overflow: hidden;
-  position: absolute;
+  min-height: 100vh;
 
   display: flex;
   align-items: center;
@@ -19,61 +19,41 @@
   background-size: 300% 300%;
   animation: animateBackground 10s ease-in-out infinite;
 
-  &--h1 {
-    position: relative;
-    margin: 0 auto 10rem auto;
-    top: 25vh;
-    width: 100vw;
-    text-align: center;
-    font-family: inherit;
-
-    color: $color-gray-main;
-    opacity: 0.75;
-    animation: pulse 2.5s linear infinite;
-
-    @include respond-to(md) {
-      font-size: 4vh;
-    }
-
-    @include respond-to(lg) {
-      font-size: 5vh;
-    }
-
-    @include respond-to(xl) {
-      font-size: 6vh;
-    }
-  }
+  position: relative;
 }
 
 .cooking {
-  position: relative;
-  margin: 0 auto 10rem auto;
-  top: 0;
+  position: absolute;
+  margin: 0 auto;
+
   width: 75vh;
   height: 75vh;
   overflow: hidden;
 
   @include respond-to(xs) {
     transform: scale(0.6);
+    top: 0;
   }
 
   @include respond-to(sm) {
     transform: scale(0.8);
+    top: -5%;
   }
 
   @include respond-to(md) {
     transform: scale(1);
+    top: -10%;
   }
 
   &__bubble {
-    position: absolute;
+    position: relative;
     border-radius: 100%;
     box-shadow: 0 0 0.25vh lighten($color-gray-main, 10%);
     opacity: 0;
   }
 
   &__bubble:nth-child(1) {
-    margin-top: 2.5vh;
+    // margin-top: 2.5vh;
     left: 58%;
     width: 2.5vh;
     height: 2.5vh;
@@ -82,7 +62,7 @@
   }
 
   &__bubble:nth-child(2) {
-    margin-top: 3vh;
+    // margin-top: 3vh;
     left: 52%;
     width: 2vh;
     height: 2vh;
@@ -91,7 +71,7 @@
   }
 
   &__bubble:nth-child(3) {
-    margin-top: 1.8vh;
+    // margin-top: 1.8vh;
     left: 50%;
     width: 1.5vh;
     height: 1.5vh;
@@ -100,7 +80,7 @@
   }
 
   &__bubble:nth-child(4) {
-    margin-top: 2.7vh;
+    // margin-top: 2.7vh;
     left: 56%;
     width: 1.2vh;
     height: 1.2vh;
@@ -109,7 +89,7 @@
   }
 
   &__bubble:nth-child(5) {
-    margin-top: 2.7vh;
+    // margin-top: 2.7vh;
     left: 63%;
     width: 1.1vh;
     height: 1.1vh;
