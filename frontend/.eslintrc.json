@@ -75,6 +75,13 @@
       {
         "prefer": "type-imports"
       }
+    ],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "enum",
+        "format": ["UPPER_CASE"]
+      }
     ]
   }
 }
