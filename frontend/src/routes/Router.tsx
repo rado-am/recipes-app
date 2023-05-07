@@ -11,7 +11,7 @@ const NotFoundPage = lazy(() => import("pages/NotFountPage"));
 
 const getRouteElement = (Component: ElementType): ReactNode => (
   <Suspense fallback={<PageLoader />}>
-    <PageLoader />
+    <Component />
   </Suspense>
 );
 
