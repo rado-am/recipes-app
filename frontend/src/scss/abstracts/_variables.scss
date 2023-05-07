@@ -1,3 +1,29 @@
-// Colors
-$black: "#000000";
-$white: "#ffffff";
+////////////////////////////////////////////////////////////////////////
+// COLORS:
+
+$black: #000;
+$white: #fff;
+
+// GRAYS
+$color-gray-main: #999;
+
+$color-background-1: #1f1e23;
+$color-background-2: #353539;
+$color-background-3: #1c1b20;
+$color-background-4: #1f1e23;
+
+// BROWNS
+$color-pancake: #d6c9b6;
+
+////////////////////////////////////////////////////////////////////////
+// BREAKPOINTS
+
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
+////////////////////////////////////////////////////////////////////////
