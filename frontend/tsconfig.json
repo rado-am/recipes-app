@@ -22,7 +22,8 @@
     "strictNullChecks": true,
     "newLine": "lf",
     "removeComments": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
