@@ -6,6 +6,7 @@ import { RouterProvider } from "react-router-dom";
 import Router from "routes/Router";
 import store from "store/store";
 
+import "i18n/i18n";
 import "./scss/styles.scss";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(

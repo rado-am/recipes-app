@@ -28,6 +28,7 @@
     }
   },
   "rules": {
+    "react-hooks/exhaustive-deps": "off",
     "array-callback-return": "error",
     "no-constant-binary-expression": "error",
     "no-constructor-return": "error",
