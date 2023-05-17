@@ -1,22 +1,22 @@
 import type { PayloadAction } from "@reduxjs/toolkit";
 import { createSlice } from "@reduxjs/toolkit";
 
-import { Language, Theme } from "./enums";
+import { LANGUAGE, THEME } from "./enums";
 import type { AppState } from "./types";
 
 const INITIAL_STATE: AppState = {
-  theme: Theme.LIGHT,
-  language: Language.EN,
+  theme: THEME.LIGHT,
+  language: LANGUAGE.EN,
 };
 
 const appSlice = createSlice({
   name: "app",
   initialState: INITIAL_STATE,
   reducers: {
-    setTheme: (state, action: PayloadAction<Theme>) => {
+    setTheme: (state, action: PayloadAction<THEME>) => {
       state.theme = action.payload;
     },
-    setLanguage: (state, action: PayloadAction<Language>) => {
+    setLanguage: (state, action: PayloadAction<LANGUAGE>) => {
       state.language = action.payload;
     },
   },
