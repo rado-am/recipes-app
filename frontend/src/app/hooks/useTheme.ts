@@ -1,11 +1,18 @@
+import { useCallback } from "react";
+
 import { setTheme } from "app/appSlice";
-import { Theme } from "app/enums";
-import { useAppDispatch } from "store/hooks";
+import type { THEME } from "app/enums";
+import { useAppDispatch, useAppSelector } from "store/hooks";
 
-const useTheme = () => {
+import type { RootState } from "../../store/types";
+
+export const useTheme = () => {
   const dispatch = useAppDispatch();
+  const { theme } = useAppSelector((state: RootState) => state.app);
 
-  dispatch(setTheme(Theme.DARK));
+  const setCurrentTheme = useCallback((theme: THEME) => {
+    dispatch(setTheme(theme));
+  }, []);
+
+  return { theme, setCurrentTheme };
 };
-
-export default useTheme;

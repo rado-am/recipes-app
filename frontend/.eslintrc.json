@@ -28,6 +28,7 @@
     }
   },
   "rules": {
+    "react-hooks/exhaustive-deps": "off",
     "array-callback-return": "error",
     "no-constant-binary-expression": "error",
     "no-constructor-return": "error",
@@ -74,6 +75,13 @@
       "error",
       {
         "prefer": "type-imports"
+      }
+    ],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "enum",
+        "format": ["UPPER_CASE"]
       }
     ]
   }
